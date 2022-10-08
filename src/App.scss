@@ -1,0 +1,73 @@
+$WindowBarColor : 	hsl(215, 100%, 34%);
+$WindowTextColor : 	#6495ED;
+$BackgroundColor :#B3C0FF;
+$Orange : rgb(255, 145, 0);
+$red : rgb(172, 57, 57);
+$Blue:rgb(0, 68, 102);
+$Grey : rgb(223, 217, 217);
+
+.App {
+    text-align: center;
+    padding:20px;
+}
+
+#root{
+    height:100vh;
+    width:100%;
+    display:grid;
+    justify-content: center;
+    align-items: center;
+}
+  
+*, html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+
+body{
+    background-color: $BackgroundColor;
+    height:100%;
+}
+
+.Clock{
+    text-align: center;
+    font-size:25px;
+    .ControllersDiv{
+        font-weight: bold;
+        display: flex;
+        gap:70px;
+        text-align: center;
+        .Controllers{
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            gap:15px;
+            svg{
+                font-size:30px;
+                cursor: pointer;
+            }
+        }
+    }
+    .ClockController{
+        margin-top:10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:25px;
+    }
+    .Display{
+        border: 5px solid $Grey;
+        color:$red;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        margin-top: 20px;
+        padding:20px;
+        .CurrentTime{
+            font-size:70px;
+        }
+    }
+}
+
